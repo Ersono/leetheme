@@ -1,0 +1,205 @@
+@import url(https://fonts.googleapis.com/css?family=Candal);
+
+*	{margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	}
+
+html{
+	font-size: 18px;
+}
+
+#wrap{
+
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-flow: row wrap;
+
+}
+
+nav.navigation{
+
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	width: 90%;
+	height: auto;
+	margin: 0 auto;
+}
+
+section.content{
+
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	width: 100%;
+	height: auto;
+	margin: 15px auto;
+}
+
+
+section.content > article{
+
+	width: 22%;
+	height: 250px;
+	padding: 15px;
+	flex-flow: row wrap;
+	background-color: #000;
+	border-radius: 15px;
+}
+
+section.content > article >img{
+margin: 0 auto;
+height: auto;
+width: 100%;
+}
+
+section.content > article > h2{
+
+	font-family: 'Candal', sans-serif;
+	color: #fff;
+}
+
+section.content > article > p{
+
+	font-family: 'Dosis', sans-serif;
+	color: rgb(250, 254, 69);
+	font-size: 0.9rem;
+}
+
+nav.navigation > a {
+
+
+	display: block;
+	flex-basis: 200px;
+	flex-grow:1;
+	margin: 5px;
+	text-decoration: none;
+	background-color: rgb(29, 64, 99);
+	height: 2rem;
+	border-radius: 8px;
+	text-align: center;
+	padding-top: 0.2rem;
+	padding-bottom: 0.5rem;
+	color: rgb(250, 254, 69);
+	font-size: 1.2rem;
+	font-family: 'Dosis', sans-serif;
+
+}
+
+.marquesina{
+	display: block;
+	float: left;
+	width: 100%;
+	height: 580px;
+	margin: 0 auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding: 20px;
+	background-image: url("lee.jpg");
+    background-repeat: no-repeat;
+    background-position: top center;
+
+}
+
+
+.marquesina h1{
+	color: rgb(29, 64, 99);
+	display: block;
+	font-size: 3rem;
+	font-family: 'Candal', sans-serif;
+	width: 100%;
+	height: auto;
+	margin-top:130px;
+	background-color: rgba(255, 255, 255, 0.6);
+	text-align: center;
+	padding-bottom: 15px;
+}
+
+.marquesina p{
+	display: block;
+	font-size: 1.2rem;
+	font-family: 'Candal', sans-serif;
+	width: 80%;
+	margin-top: 1rem;
+	margin-left: 5rem;
+	background-color: rgba(250, 254, 69, 0.6);
+	padding: 10px;
+
+}
+
+nav.navigation > a:hover{
+
+color: rgb(218, 252, 254);
+background-color: #000;
+transform:skew(-10deg);
+
+
+}
+
+#pull{
+	display:none;
+	width: 100%;
+	margin: 0px auto;
+	margin-bottom: 15px;
+	text-decoration: none;
+	background-color: red;
+	background-image: url('lineas.jpg');
+	background-repeat: no-repeat;
+	background-position: 4px 4px;
+	height: 2rem;
+	text-align: center;
+	padding-top: 0.2rem;
+	padding-bottom: 0.5rem;
+	color: rgb(250, 254, 69);
+	font-size: 1.2rem;
+	font-family: 'Dosis', sans-serif;
+	position: fixed;
+	z-index: 20;
+}
+
+
+/* MEDIA QUERYS +++++++++++++++++++++++++++++++++++++++++++++ */
+@media only screen and (max-width : 480px) {
+
+#pull{
+	display: block;
+}
+
+nav.navigation{
+	display: none;
+	margin-top: 2.1rem;
+}
+
+.marquesina{
+	display: block;
+	background-image: none;
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+	padding: 0px;
+	background-color: yellow;
+
+}
+
+.marquesina h1{
+	font-size: 1.5rem;
+	font-family: 'Indie Flower', cursive;
+	width: 98%;
+	height: auto;
+	margin:0 auto;
+}
+
+.marquesina p{
+	display: block;
+	font-size: 1rem;
+	font-family: 'Indie Flower', cursive;
+	width: 100%;
+	margin: 5px;
+
+}
+
+}
+
+
